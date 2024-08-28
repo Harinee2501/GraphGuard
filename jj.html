@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS of SNUC</title>
+    <style>
+        /* CSS styles remain the same */
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Header content remains the same -->
+    </header>
+    <main>
+        <section id="activities">
+            <!-- Activities section content remains the same -->
+        </section>
+        <section id="volunteers">
+            <!-- Volunteers section content remains the same -->
+        </section>
+        <section id="inventory">
+            <!-- Inventory section content remains the same -->
+        </section>
+        <section id="events">
+            <!-- Events section content remains the same -->
+        </section>
+    </main>
+    <footer>
+        <!-- Footer content remains the same -->
+    </footer>
+
+    <script>
+        // JavaScript code for toggling section visibility
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.classList.toggle('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+<label>Your Image File <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg"></label>
+    <hr>
+    <img src="imgg.jpg" width="400" height="300"/>

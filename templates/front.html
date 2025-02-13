@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Fraud Detection System</h1>
+        <p>Enter your transaction data in JSON format:</p>
+
+        <form action="/upload" method="POST">
+            <label for="transactions">Transaction Data:</label><br>
+            <textarea name="transactions" rows="10" cols="50" placeholder='Example: [{"sender": "A", "receiver": "B", "amount": 100}, {"sender": "A", "receiver": "C", "amount": 50}]'></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
